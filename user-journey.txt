@@ -1,0 +1,21 @@
+user journey-
+
+-comes to landing page
+
+	if login then authenticates info
+		if correct then prompted to /users:username page
+		if incorrect then informed and access denied
+ 	if sign up then enters info
+ 		if successful then prompted to /users:usnername page
+
+ -arrives at user homepage, can view:
+ 		1. family portal with members and friends portal with members
+ 			-buttons to add & remove members from each portal
+ 			-when adding member, prompted to form for communication frequency and type goals
+ 		2. weekly scheduled in daily calendar form
+ 			-just a display with data uploaded
+ 		3. stats section with totals and last weeks results
+ 			-just a display with data uploaded
+
+
+
