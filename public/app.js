@@ -1,11 +1,19 @@
-'use strict'
+$.ajax('/profile:' + username)
+    .done(function(users) {
 
-$('#signup-link').on('click', function(){
-	$('#signup-box').toggle();
-	$('#login-box').hide();
-});
+        for (var i = 0; i < newUser.length; i++) {
 
-$('#login-link').on('click', function(){
-	$('#login-box').toggle();
-	$('#signup-box').hide();
-});
+            $('#profile-header').append(
+
+                `
+                    <h1>First Name: ${newUser[i].firstname}</h1>
+                    <h1>Last Name: ${newUser[i].lastname}</h1>
+                    <h3>Who do you need to keep in touch with this week? </h3>
+                `
+            );
+
+        }
+
+    }).fail(function(error) {
+        console.log('There was an error ' + error);
+    });

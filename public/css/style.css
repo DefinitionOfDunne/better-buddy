@@ -54,7 +54,8 @@ header {
     font-size: 2rem;
     margin-top: 1rem;
 }
-.submit-button{
+
+.submit-button {
     display: block;
     width: 75%;
     height: 2rem;
@@ -66,6 +67,7 @@ header {
     text-transform: uppercase;
     border: none;
 }
+
 .account-input {
     margin: 2rem auto;
     padding: 1rem;
@@ -74,16 +76,17 @@ header {
     height: auto;
     background-color: #004d99;
     font-family: 'Lato', sans-serif;
-    display: none;
 }
+
 .account-input h1 {
     text-align: center;
     font-size: 1.5rem;
     margin: 1rem auto;
     color: white;
 }
+
 .account-input input {
-text-transform: uppercase;
+    /*text-transform: uppercase;*/
     width: 100%;
     display: block;
     height: 1.5rem;
@@ -93,19 +96,48 @@ text-transform: uppercase;
     margin: 1rem auto;
     font-size: .75rem;
 }
+
 .forgot {
     text-align: center;
     font-size: .75rem;
     display: block;
     margin: 1.5rem auto;
 }
-.forgot a {
-  color: white;
-}
 
+a {
+    color: white;
+}
 
 #signup-box {}
 
 #login-box {}
 
 .field-wrap {}
+
+#contacts-portal-wrapper {
+    height: auto;
+    width: 20rem;
+    background-color: #004d99;
+    margin: 5rem auto;
+}
+
+#contacts-portal-wrapper h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+}
+
+#contacts-portal-list li {
+    color:white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.fa {
+    color: white;
+    display: inline-block;
+    margin: 1rem auto;
+    width: 30%;
+    text-align: center;
+}

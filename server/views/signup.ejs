@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div id="full-page-wrapper">
+        <header>
+            <ul id="menu-options">
+            <li id='signup-link'><a href="/signup">Sign Up</a></li>
+            <li id='login-link'> <a href="/login">Login</a></li>
+            </ul>
+        </header>
+        <% if (message.length > 0) { %>
+        <div class="flash-message"><%= message %></div>
+        <% } %>
+    <div class="account-input" id='signup-box'>
+    <form action="/signup" method="post">
+        <h1>Sign Up</h1>
+        <div class="field-wrap">
+            <input type="text" placeholder=" First Name" required autocomplete="off" name='firstname' />
+        </div>
+        <div class="field-wrap">
+            <input type="text" placeholder=" Last Name" required autocomplete="off" name='lastname' />
+        </div>
+        <div class="field-wrap">
+            <input type="text" placeholder=" Username" required autocomplete="off" name='username' />
+        </div>
+        <div class="field-wrap">
+            <input type="email" name='email' placeholder=" Email" required autocomplete="off" />
+        </div>
+        <div class="field-wrap">
+            <input type="password" placeholder=" Set A Password" required autocomplete="off" name='password' />
+        </div>
+        <button type="submit" class="submit-button" id="new-account-button" />Get Started</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
